@@ -1,15 +1,17 @@
 <template>
   <div>
-    <h2>组件内值变化</h2>
-    <h3>n: {{ n }}</h3>
+    <h3>父组件按钮：</h3>
     <button @click="add">n+1</button>
     <button @click="reduce">n-1</button>
     <button @click="reset">reset</button>
+    <child :n="n" />
   </div>
 </template>
 
-<script>
+script <script>
+import child from './02-child.vue';
 export default {
+  components: { child },
   data() {
     return {
       n: 0,
