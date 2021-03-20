@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h2>父组件向子组件传值</h2>
+    <h2>子组件显示父组件的值</h2>
+    <strong>Props方法</strong>
+    <p>
+      data 在父组件中，button 和 methods 在父组件中，子组件只是显示
+      data，不能改变
+    </p>
     <father />
   </div>
 </template>

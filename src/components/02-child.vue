@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>子组件的n：{{ n }}</h3>
+    <h3>Props传给子组件的n：{{ n }}</h3>
   </div>
 </template>
 
