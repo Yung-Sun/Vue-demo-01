@@ -13,13 +13,13 @@ export default {
   props: ['n'],
   methods: {
     add() {
-      this.$emit('add');
+      this.$emit('add:n');
     },
     reduce() {
-      this.$emit('reduce');
+      this.$emit('reduce:n');
     },
     reset() {
-      this.$emit('reset');
+      this.$emit('reset:n');
     },
   },
 };
